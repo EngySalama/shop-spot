@@ -1,0 +1,80 @@
+/* App.css */
+
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5; /* Light gray background for the whole app */
+    color: #333; /* Dark gray text for readability */
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit; /* Default color for links to inherit from parent */
+  }
+  
+  /* Container styling for responsiveness */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Header styling */
+  .header {
+    background-color: #232f3e; /* Amazon dark blue color */
+    color: #ffffff;
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  /* Footer styling */
+  .footer {
+    background-color: #232f3e; /* Same dark blue as header */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  /* Button styling */
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #ff9900; /* Amazon orange color */
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #e68a00; /* Slightly darker orange for hover */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 10px;
+    }
+  }
+  
+  
+

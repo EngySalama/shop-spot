@@ -1,0 +1,38 @@
+.terms-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .terms-title {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .terms-intro {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .terms-section {
+    margin-bottom: 20px;
+  }
+  
+  .terms-section h2 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  .terms-section p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  

@@ -1,0 +1,49 @@
+/* src/components/InstallmentPage.css */
+
+.installment-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4; /* Light gray background */
+    min-height: 100vh; /* Ensure it takes full height */
+  }
+  
+  .installment-card {
+    background-color: #fff; /* White background for the card */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* Max width of the card */
+    padding: 20px;
+    margin: 20px; /* Margin to separate from edges */
+  }
+  
+  .installment-card-body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .installment-title {
+    font-size: 24px;
+    color: #232f3e; /* Dark blue color */
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .installment-text {
+    font-size: 16px;
+    color: #333; /* Dark gray color for text */
+  }
+  
+  .installment-steps {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style-type: decimal;
+    color: #555; /* Medium gray color for list items */
+  }
+  
+  .installment-steps li {
+    margin-bottom: 10px;
+  }
+  

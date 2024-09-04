@@ -1,0 +1,65 @@
+/* src/components/CategoryPage.css */
+
+.category-container {
+    padding: 20px;
+    background-color: #f3f3f3; /* Light Gray background for the page */
+    min-height: 100vh; /* Ensure the container takes up at least the full viewport height */
+    display: flex;
+    justify-content: top; /* Center content horizontally */
+    align-items: right; /* Center content vertically */
+    flex-direction: column; /* Stack elements vertically */
+}
+
+.category-header {
+    color: #131921; /* Amazon Blue for the header */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.category-buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 20px; /* Space between buttons */
+    align-items: flex-start; /* Align buttons to the left side of the container */
+    width: 100%; /* Ensure the container takes the full width */
+    max-width: 600px; /* Optional: limit max-width for better layout on larger screens */
+    padding-left: 20px; /* Optional: add padding to the left for spacing */
+}
+
+.category-button {
+    background-color: #ff9900; /* Amazon Orange for the buttons */
+    border: none;
+    color: white;
+    padding: 15px 25px; /* Padding around text */
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Make the buttons fill the width of the container */
+    max-width: 400px; /* Max width for buttons */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-button:hover {
+    background-color: #e68a00; /* Darker Orange on hover */
+    transform: scale(1.05); /* Slightly scale up the button on hover */
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+    .category-container {
+        padding: 10px; /* Adjust padding on smaller screens */
+    }
+
+    .category-button {
+        width: 100%; /* Full width of the container on small screens */
+        max-width: 400px; /* Max width for buttons on small screens */
+    }
+}

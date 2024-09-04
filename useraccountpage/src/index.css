@@ -1,0 +1,95 @@
+/* index.css */
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333; /* Dark gray text color for readability */
+    background-color: #f5f5f5; /* Light gray background color */
+    font-family: Arial, sans-serif; /* Consistent font across the app */
+  }
+  
+  /* Anchors */
+  a {
+    color: inherit; /* Inherit color from parent */
+    text-decoration: none; /* Remove underlines from links */
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+  }
+  
+  /* Lists */
+  ul, ol {
+    list-style: none; /* Remove default list styling */
+  }
+  
+  /* Images */
+  img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Forms */
+  input, textarea, select {
+    font-family: inherit; /* Inherit font settings */
+  }
+  
+  /* Flexbox */
+  .flex {
+    display: flex;
+  }
+  
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Utility Classes */
+  .text-center {
+    text-align: center;
+  }
+  
+  .mt-1 {
+    margin-top: 0.25rem;
+  }
+  
+  .mt-2 {
+    margin-top: 0.5rem;
+  }
+  
+  .mb-1 {
+    margin-bottom: 0.25rem;
+  }
+  
+  .mb-2 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .p-1 {
+    padding: 0.25rem;
+  }
+  
+  .p-2 {
+    padding: 0.5rem;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 15px;
+    }
+  }
+  

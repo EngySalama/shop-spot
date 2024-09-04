@@ -1,0 +1,98 @@
+/* src/components/AccountPage.css */
+
+.account-page-container {
+  padding: 20px;
+  background-color: #f4f4f4; /* Light gray background */
+  min-height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.account-header {
+  text-align: center;
+  margin-bottom: 30px; /* Reduced margin for a more compact look */
+}
+
+.account-title {
+  color: #232f3e; /* Amazon Blue */
+  font-size: 32px; /* Slightly smaller title size */
+  font-weight: 700;
+  margin: 0;
+}
+
+.account-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Spacing between cards */
+  width: 100%;
+  max-width: 1000px; /* Adjusted maximum width */
+}
+
+.account-card {
+  background-color: #fff; /* White background for cards */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: box-shadow 0.3s, transform 0.3s;
+  overflow: hidden;
+  flex: 1 1 calc(50% - 20px); /* Each card takes up 50% of the container width minus spacing */
+  max-width: calc(50% - 20px); /* Ensure cards do not exceed 50% width */
+  min-width: 280px; /* Adjusted minimum width */
+  min-height: 300px; /* Slightly smaller minimum height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute space evenly between card content */
+}
+
+.account-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  transform: scale(1.02); /* Slightly scale up card on hover */
+}
+
+.card-body {
+  padding: 15px; /* Reduced padding for a smaller card */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1; /* Ensure the content takes up available space */
+}
+
+.card-title {
+  color: #232f3e; /* Amazon Blue */
+  font-size: 18px; /* Slightly smaller title size */
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: #555; /* Dark gray text */
+  font-size: 14px;
+  margin-bottom: 15px; /* Reduced margin for a more compact look */
+}
+
+/* Centered smaller button */
+.custom-btn {
+  background-color: #ff9900; /* Amazon Orange */
+  color: #fff;
+  padding: 6px 12px; /* Smaller padding for a smaller button */
+  border-radius: 3px; /* Reduced border radius for a more compact button */
+  font-size: 12px; /* Smaller font size */
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 auto; /* Center the button horizontally */
+  transition: background-color 0.3s, transform 0.3s;
+}s
+
+.custom-btn:hover {
+  background-color: #e68a00; /* Darker Orange on hover */
+  transform: scale(1.03); /* Slightly scale up button on hover */
+}
+
+@media (max-width: 768px) {
+  .account-card {
+    flex: 1 1 100%; /* Stack cards vertically on smaller screens */
+    max-width: 100%;
+  }
+}
