@@ -1,11 +1,12 @@
-// src/components/ItemDetailsPage.js
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import './ItemDetailsPage.css'; // Add CSS styling for this component
+import Rating from './Rating';
+import './ItemDetailsPage.css';
 
 function ItemDetailsPage() {
-  const { id } = useParams(); // Get the item ID from the URL
+  const { id } = useParams();
   const [itemDetails, setItemDetails] = useState(null);
+  const [rating, setRating] = useState(0);
 
   useEffect(() => {
     async function fetchItemDetails() {
@@ -21,6 +22,11 @@ function ItemDetailsPage() {
     fetchItemDetails();
   }, [id]);
 
+  const handleRating = (newRating) => {
+    setRating(newRating);
+    console.log('Rating submitted:', newRating);
+  };
+
   return (
     <div className="item-details-page">
       {itemDetails ? (
@@ -30,6 +36,7 @@ function ItemDetailsPage() {
           <img src={itemDetails.image} alt={itemDetails.title} />
           <p>{itemDetails.description}</p>
           <p>${itemDetails.price}</p>
+          <Rating onRate={handleRating} />
         </div>
       ) : (
         <p>Loading item details...</p>
